@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c8b757b3cbeb543ae40d9ef4eb73a3, type: 3}
+  m_Name: HelmetData
+  m_EditorClassIdentifier: 
+  Id: Helmet
+  Type: 1
+  TierData:
+  - Icon: {fileID: 21300000, guid: 80a3ecf83bb923646b6a0bfbc1f2580a, type: 3}
+    Tier: 0
+    Stats:
+      heatlh: 12
+      attack: 3
+      armor: 7
+      speed: 0
+  - Icon: {fileID: 21300000, guid: c0dd5a6b272b3344d8c97211fde0719e, type: 3}
+    Tier: 1
+    Stats:
+      heatlh: 24
+      attack: 5
+      armor: 12
+      speed: 0
+  - Icon: {fileID: 21300000, guid: fd55a7e4212f1bc49bbeaa341478edd2, type: 3}
+    Tier: 2
+    Stats:
+      heatlh: 50
+      attack: 15
+      armor: 25
+      speed: 0
+  - Icon: {fileID: 21300000, guid: 2ecf5a83f0102ef46913bed6742c012e, type: 3}
+    Tier: 3
+    Stats:
+      heatlh: 128
+      attack: 43
+      armor: 76
+      speed: 0
