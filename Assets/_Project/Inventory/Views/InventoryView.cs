@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 
 public class InventoryView : MonoBehaviour 
@@ -89,7 +90,6 @@ public class InventoryView : MonoBehaviour
             for (int j = 0; j < inventoryConfig.col ; j++)
             {
                 var slotView = Instantiate(slot);
-                slotView.slotIndex = i;
                 slotView.transform.SetParent(slotParent,true);
                 slots.Add(slotView);
             }

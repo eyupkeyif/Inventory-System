@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
 
     public void EquipItem(ItemData equippedItemData)
     {
-        Debug.Log($"Item equipped");
         currentStats.health += equippedItemData.GetItemStats().heatlh;
         currentStats.attack += equippedItemData.GetItemStats().attack;
         currentStats.defense += equippedItemData.GetItemStats().armor;
@@ -31,7 +30,6 @@ public class Player : MonoBehaviour
 
     public void UnequipItem(ItemData unequippedItemData)
     {
-        Debug.Log($"Item unequipped");
         currentStats.health -= unequippedItemData.GetItemStats().heatlh;
         currentStats.attack -= unequippedItemData.GetItemStats().attack;
         currentStats.defense -= unequippedItemData.GetItemStats().armor;

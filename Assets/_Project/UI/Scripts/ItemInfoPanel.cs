@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class ItemInfoPanel : MonoBehaviour 
 {
     [Header("References")]
+    [SerializeField] Transform content;
     [SerializeField] ItemStatsView statsView;
     [SerializeField] Image itemIcon;
     [SerializeField] Image itemFrame;
@@ -36,7 +38,15 @@ public class ItemInfoPanel : MonoBehaviour
         deleteButton.onClick.AddListener(OnDeleteButtonPressed);
     }
 
-    
+    void OnEnable()
+    {
+        DOTween.Kill(this);
+        content.localScale = Vector3.one * 0.2f;
+        content.DOScale(Vector3.one,0.3f)
+        .SetEase(Ease.OutBack)
+        .SetId(this)
+        .SetLink(gameObject,LinkBehaviour.KillOnDisable);
+    }
 
     public void SetupPanel(Item item)
     {
